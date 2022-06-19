@@ -18,9 +18,14 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/open.js" type="text/javascript"></script>
-		<script src="client.js" type="text/javascript"></script>
+		<script type="text/javascript">
+    // 안드로이드 우측 버튼 비활성
+    $(document).bind("contextmenu", function (e) {
+        return false;
+    });
+</script>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -51,10 +56,10 @@
 						<p class="style2">
 							Unity 기반 멀티플레이 MMORPG입니다
 						</p>
-						<p class="style3"><strong>서버 당 500명까지 동시 접속</strong>이 가능한 <strong>RPG</strong>장르의 게임입니다.<br/><strong>몬스터</strong>와 <strong>적</strong>들을 
-						잡아서 아이템을 얻으세요! 강해질 수 있는 지름길입니다!</p>
+						<p class="style3"><strong>500명까지 동시 접속</strong>이 가능한 <strong>RPG</strong>장르의 게임입니다.<br/><strong>몬스터</strong>와 <strong>적</strong>들을 
+						잡아서 아이템을 얻으세요! 강해질 수 있는 지름길입니다!<br/><br/>※압축 해제 후 MMO_Unity.exe를 실행해주세요.</p>
 						<ul class="actions">
-							<li><a href="https://newbiegameserver.s3.ap-northeast-2.amazonaws.com/Gozila-1.zip" class="button large">Game Download</a></li>
+							<li><a href="https://d416hjgcwitnp.cloudfront.net/Gozila.zip" class="button large">Game Download</a></li>
 						</ul>
 					</div>
 					<p class="style1" style="margin-top: 5%;"><strong>스크린샷</strong></p>
@@ -89,25 +94,46 @@
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/csharp.png" width="30%" height="30%" style="margin-bottom: 10%;"/>
+												<img src="images/csharp.png" width="30%" height="30%" style="margin-bottom: 8%;"/>
 												<h3 class="icon">C#</h3>
-												<p>Unity 스크립트 및 기타 코드 작성을 위해 C#을 <br/>사용하였습니다.</p>
+												<p>Unity 스크립트 및 기타 코드 작성을 위해 <br/>C#을 사용하였습니다.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/mssql.jpg" width="40%" height="40%" style="margin-bottom: 0%;"/>
+												<img src="images/mssql.png" width="27%" height="27%" style="margin-bottom: 10%;"/>
 												<h3 class="icon">MSSQL</h3>
 												<p>각종 정보가 저장되는 데이터베이스의 생성 및 <br/>관리를 위해 MSSQL을 사용하였습니다.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/ec2.png" width="30%" height="30%" style="margin-bottom: 10%;"/>
+												<img src="images/ec2.svg" width="23%" height="23%" style="margin-bottom: 10%;"/>
 												<h3 class="icon">AWS EC2</h3>
 												<p>게임 서버 호스팅과 웹페이지 호스팅을 위해 <br/>AWS EC2를 사용하였습니다.</p>
 											</section>
 										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/route53.png" width="27%" height="27%" style="margin-bottom: 13%;"/>
+												<h3 class="icon">AWS Route53</h3>
+												<p>웹페이지 도메인 부여를 위해<br/>AWS Route53을 사용하였습니다.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/s3.png" width="40%" height="40%" style="margin-bottom: 10%;"/>
+												<h3 class="icon">AWS S3</h3>
+												<p>웹페이지 파일 저장을 위해<br/>AWS S3를 사용하였습니다.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/cloudfront.png" width="40%" height="40%" style="margin-bottom: 10%;"/>
+												<h3 class="icon">AWS Cloudfront</h3>
+												<p>S3의 Cache server CDN을 위해<br/>AWS Cloudfront를 사용하였습니다.</p>
+											</section>
+										</div>										
 									</div>
 								</div>
 							</section>
@@ -119,8 +145,6 @@
 				<section id="highlights" class="wrapper style3">
 					<div class="title">Newbie 팀원</div>
 					<div class="container">
-						<p style="text-align: center;">각 팀원이 만든 미니 게임을 다운로드해서 즐겨보세요!</p>
-						<br/>
 						<div class="row aln-center">
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
@@ -177,18 +201,15 @@
 				</section>
 
 			<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title">Links</div>
-					<div class="container">
-						<header class="style1">
-							<a onClick="openGit()"><img src="images/git.png" width="10%" height="10%"/></a>&nbsp;
-							<a onclick="openKau()" style="margin-left: 10%;"><img src="images/kau.png" width="10%" height="10%"/></a>
-
-						</header>
-						
-					</div>
-				</section>
-
+			<section id="footer" class="wrapper">
+				<div class="title">Links</div>
+				<div class="container">
+					<header class="style1">
+						<a style="cursor:pointer;" onClick="openGit()"><img src="images/git.png" width="10%" height="10%"/></a>&nbsp;
+						<a onclick="openKau()" style="margin-left: 10%; cursor:pointer;"><img src="images/kau.png" width="10%" height="10%"/></a>
+					</header>
+				</div>
+			</section>
 		</div>
 	</body>
 </html>

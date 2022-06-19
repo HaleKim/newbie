@@ -31,6 +31,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	-webkit-touch-callout:none;
+}
+
+#highlights img{
+	pointer-events : none;
 }
 
 ol, ul {
@@ -233,6 +238,10 @@ input, select, textarea {
 
 			.container {
 				width: calc(100% - 40px);
+			}
+
+			.button{
+				display: none !important;
 			}
 
 		}
@@ -1706,6 +1715,7 @@ input, select, textarea {
 			button.style1:hover,
 			.button.style1:hover {
 				background-color: #f98780;
+				color: white !important;
 			}
 
 			input[type="button"].style1:active,
@@ -2981,29 +2991,4 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
-
-		/* Copyright */
-
-			#copyright {
-				padding-top: 0;
-				margin-top: 4em;
-				border-top: 0;
-			}
-
-				#copyright ul {
-					padding: 1em 2em;
-					width: 100%;
-				}
-
-					#copyright ul li {
-						display: block;
-						margin: 0.5em 0 0 0;
-						border-left: 0;
-						padding: 0;
-					}
-
-						#copyright ul li:first-child {
-							margin-top: 0;
-						}
-
 	}

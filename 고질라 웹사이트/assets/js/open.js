@@ -1,14 +1,14 @@
 function popup1(){
     window.open("images/capture1.png","new", 
-   "width=1200, height=530, left=150, top=100, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
+   "width=640, height=480, left=430, top=100, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
 }
 function popup2(){
     window.open("images/capture2.png","new", 
-   "width=1200, height=530, left=150, top=100, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
+   "width=640, height=480, left=430, top=100, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
 }
 function popup3(){
     window.open("images/capture3.png","new", 
-   "width=1200, height=530, left=150, top=100, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
+   "width=640, height=480, left=430, top=100, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
 }
 
 function downloadGame1(){
