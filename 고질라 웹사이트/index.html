@@ -1,0 +1,194 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gozilla</title>
+		<link rel="icon" href="images/kau.png" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/imgpopup.js" type="text/javascript"></script>
+		<script src="client.js" type="text/javascript"></script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Gozilla</a></h1>
+							<p>2022-1 KAU 산학프로젝트 Newbie</p>
+						</div>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a>윤정오</a></li>
+								<li><a>이성준</a></li>
+								<li><a>이정훈</a></li>
+								<li><a>김형래</a></li>
+								<li><a>배근우</a></li>
+							</ul>
+						</nav>
+				</section>
+
+			<!-- Intro -->
+				<section id="intro" class="wrapper style1">
+					<div class="title">프로젝트 소개</div>
+					<div class="container">
+						<p class="style1">프로젝트 Gozilla는..</p>
+						<p class="style2">
+							Unity 기반 멀티플레이 MMORPG입니다
+						</p>
+						<p class="style3"><strong>서버 당 500명까지 동시 접속</strong>이 가능한 <strong>RPG</strong>장르의 게임입니다.<br/><strong>몬스터</strong>와 <strong>적</strong>들을 
+						잡아서 아이템을 얻으세요! 강해질 수 있는 지름길입니다!</p>
+						<ul class="actions">
+							<li><a href="https://newbiegameserver.s3.ap-northeast-2.amazonaws.com/Gozila-1.zip" class="button style4 large">Game Download</a></li>
+						</ul>
+					</div>
+					<p class="style1" style="margin-top: 5%;"><strong>스크린샷</strong></p>
+					<p class="style3">크게 보려면 클릭하세요!</p>
+					<div class="grid-image">
+						<img alt="1" src="images/capture1.png" onClick="popup1()" style="cursor:hand" />
+                		<img alt="2" src="images/capture2.png" onClick="popup2()" style="cursor:hand" />
+               			<img alt="3" src="images/capture3.png" onClick="popup3()" style="cursor:hand" />
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+					<div class="title">주요 사용 기술</div>
+					<div class="container">
+
+						<!-- Image -->
+							<!--<a href="#" class="image featured">
+								<img src="images/pic01.jpg" alt="" />
+							</a>-->
+
+						<!-- Features -->
+							<section id="features">
+								<div class="feature-list">
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/unity.jpg" width="30%" height="30%" style="margin-bottom: 10%;"/>
+												<h3 class="icon">Unity</h3>
+												<p>게임 클라이언트 개발을 위한 Tool로 Unity를 <br/>사용하였습니다.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/csharp.png" width="30%" height="30%" style="margin-bottom: 10%;"/>
+												<h3 class="icon">C#</h3>
+												<p>Unity 스크립트 및 기타 코드 작성을 위해 C#을 <br/>사용하였습니다.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/mssql.jpg" width="40%" height="40%" style="margin-bottom: 0%;"/>
+												<h3 class="icon">MSSQL</h3>
+												<p>각종 정보가 저장되는 데이터베이스의 생성 및 <br/>관리를 위해 MSSQL을 사용하였습니다.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<img src="images/ec2.png" width="30%" height="30%" style="margin-bottom: 10%;"/>
+												<h3 class="icon">AWS EC2</h3>
+												<p>게임 서버 호스팅과 웹페이지 호스팅을 위해 <br/>AWS EC2를 사용하였습니다.</p>
+											</section>
+										</div>
+									</div>
+								</div>
+							</section>
+
+					</div>
+				</section>
+
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Newbie 팀원</div>
+					<div class="container">
+						<p style="text-align: center;">각 팀원이 만든 미니 게임을 다운로드해서 즐겨보세요!</p>
+						<br/>
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<img class="image featured" src="images/정오.jpg" alt="정오" />
+									<h3><a><strong>팀장</strong> 윤정오</a></h3>
+									<p>2018125038<br/>서버 개발<br/>arcnature@naver.com</p>
+									<ul class="actions">
+										<li><a onClick="downloadGame1()" class="button style1">Mini Game Download</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<img class="image featured" src="images/성준.jpg" alt="성준" />
+									<h3><a>이성준</a></h3>
+									<p>2018125044<br/>데이터베이스 개발<br/>lsjkid000@naver.com</p>
+									<ul class="actions">
+										<li><a onClick="downloadGame2()" class="button style1">Mini Game Download</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<img class="image featured" src="images/정훈.jpg" alt="정훈" />
+									<h3><a>이정훈</a></h3>
+									<p>2018125050<br />웹과 로그인 기능 구현<br/>leoyit@gmail.com</p>
+									<ul class="actions">
+										<li><a onClick="downloadGame3()" class="button style1">Mini Game Download</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<img class="image featured" src="images/형래.jpg" alt="형래" />
+									<h3><a>김형래</a></h3>
+									<p>2019106021<br/>클라이언트 개발<br/>sd5118@naver.com</p>
+									<ul class="actions">
+										<li><a onClick="downloadGame4()" class="button style1">Mini Game Download</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<img class="image featured" src="images/근우.jpg" alt="근우" style="margin-top: 10%; margin-bottom: 26%;"/>
+									<h3><a>배근우</a></h3>
+									<p>2020127025<br/>클라이언트 개발<br/>rjwltnfdkswn31@naver.com</p>
+									<ul class="actions">
+										<li><a onClick="downloadGame5()" class="button style1">Mini Game Play Video</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Links</div>
+					<div class="container">
+						<header class="style1">
+							<a href="https://github.com/HaleKim/newbie"><img src="images/git.png" width="10%" height="10%"/></a>&nbsp;
+							<a style="margin-left: 10%;" href="http://www.hangkong.ac.kr/web/index.do"><img src="images/kau.png" width="10%" height="10%"/></a>
+
+						</header>
+						
+					</div>
+				</section>
+
+		</div>
+	</body>
+</html>
